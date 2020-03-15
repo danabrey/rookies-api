@@ -18,7 +18,7 @@ class Client
             )
         );
 
-
+        $json = json_decode($json, true);
 
         if (!$json || $json['status'] !== 'success') {
             throw new PlayerNotFoundException();
