@@ -6,7 +6,7 @@ use DanAbrey\RookiesApi\Transformer\PlayerTransformer;
 
 class Client
 {
-    private const API_BASE = 'https://rookies.danabrey.com/api';
+    private const API_BASE = 'https://rookies.abrey.dev/api';
 
     public function getPlayer(string $slug)
     {
