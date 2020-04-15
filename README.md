@@ -1,6 +1,6 @@
 # Rookies API
 
-Object-oriented PHP package for reading data from my rookies data API at https://rookies.danabrey.com.
+Object-oriented PHP package for reading data from my rookies data API at https://rookies.abrey.dev.
 
 [![Build Status](https://travis-ci.com/danabrey/rookies-api.svg?branch=master)](https://travis-ci.com/danabrey/rookies-api)
 
