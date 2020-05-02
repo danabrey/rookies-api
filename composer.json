@@ -1,8 +1,8 @@
 {
   "name": "danabrey/rookies-api",
-  "description": "PHP wrapper for NFL rookies data JSON API at https://rookies.danabrey.com",
+  "description": "PHP wrapper for NFL rookies data JSON API at https://rookies.abrey.dev",
   "type": "library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "authors": [
     {
