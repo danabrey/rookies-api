@@ -12,6 +12,15 @@ class Player
     /** @var array|PlayerSeason[] */
     public $seasons;
 
+    /** @var NflTeam|null */
+    public $draft_team;
+
+    /** @var integer|null */
+    public $draft_round;
+
+    /** @var integer|null */
+    public $draft_round_pick;
+
     /** @var string */
     public $class_readable;
 

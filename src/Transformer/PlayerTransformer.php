@@ -2,6 +2,7 @@
 namespace DanAbrey\RookiesApi\Transformer;
 
 use DanAbrey\RookiesApi\College;
+use DanAbrey\RookiesApi\NflTeam;
 use DanAbrey\RookiesApi\Player;
 use DanAbrey\RookiesApi\PlayerSeason;
 use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
@@ -26,6 +27,9 @@ class PlayerTransformer
         $serializer = new Serializer($normalizers);
         /** @var Player $player */
         $player = $serializer->denormalize($this->data, Player::class);
+        if ($player->draft_team) {
+            $player->draft_team = $serializer->denormalize($player->draft_team, NflTeam::class);
+        }
         foreach ($player->seasons as &$season) {
             $season = $serializer->denormalize($season, PlayerSeason::class);
         }
